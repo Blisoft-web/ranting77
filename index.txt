@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Katalog Digital Toko - Portofolio Website UMKM</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Smooth transition for category filtering */
+    .product-card { transition: all 0.3s ease-in-out; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased pb-20">
+
+  <!-- Banner Pengumuman Demo Portofolio -->
+  <div class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-md">
+    ✨ <span class="underline decoration-wavy decoration-yellow-400">Contoh Demo Website Katalog</span> — Siap Pakai & Responsif HP dengan Domain Resmi (.store / .shop)
+  </div>
+
+  <!-- Header / Navbar Toko Demo -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-blue-600 text-white font-black flex items-center justify-center text-xl shadow-blue-200 shadow-lg">
+          K
+        </div>
+        <div>
+          <h1 class="font-bold text-lg text-slate-900 leading-tight">Katalog Serbaguna</h1>
+          <p class="text-xs text-slate-500">Toko / Kuliner / Jasa Demo</p>
+        </div>
+      </div>
+      <!-- Tombol WA Utama Head -->
+      <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20tertarik%20buat%20website%20katalog%20seperti%20demo%20ini" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold py-2 px-3.5 rounded-lg flex items-center gap-2 transition-all">
+        <i class="fa-brands fa-whatsapp text-sm"></i> <span class="hidden sm:inline">Tanya Draf Web</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section Singkat -->
+  <section class="max-w-5xl mx-auto px-4 pt-8 pb-4">
+    <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden shadow-xl">
+      <div class="relative z-10 max-w-xl">
+        <span class="bg-blue-500/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-3 border border-blue-400/30">
+          Katalog Digital 24 Jam
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Pilih Produk & Langsung Order Lewat WhatsApp</h2>
+        <p class="text-slate-300 text-xs sm:text-sm mt-2 leading-relaxed">
+          Toko fisik Anda kini punya brosur online modern. Bebas komisi aplikasi, praktis, dan cepat diakses pembeli dari HP.
+        </p>
+      </div>
+      <!-- Decorative Elements -->
+      <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-blue-600/30 rounded-full blur-2xl"></div>
+    </div>
+  </section>
+
+  <!-- Filter Kategori Produk -->
+  <section class="max-w-5xl mx-auto px-4 py-4">
+    <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none text-sm font-medium">
+      <button onclick="filterCategory('all')" class="cat-btn active bg-blue-600 text-white px-4 py-2 rounded-xl shadow-sm whitespace-nowrap">Semua Produk</button>
+      <button onclick="filterCategory('kuliner')" class="cat-btn bg-white text-slate-600 border border-slate-200 px-4 py-2 rounded-xl whitespace-nowrap hover:bg-slate-100">Kuliner & Minuman</button>
+      <button onclick="filterCategory('fashion')" class="cat-btn bg-white text-slate-600 border border-slate-200 px-4 py-2 rounded-xl whitespace-nowrap hover:bg-slate-100">Fashion & Outfit</button>
+      <button onclick="filterCategory('jasa')" class="cat-btn bg-white text-slate-600 border border-slate-200 px-4 py-2 rounded-xl whitespace-nowrap hover:bg-slate-100">Jasa & Layanan</button>
+    </div>
+  </section>
+
+  <!-- Grid Produk / Katalog Utama -->
+  <main class="max-w-5xl mx-auto px-4 py-2">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- ITEM 1: Kuliner -->
+      <div class="product-card kuliner bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
+        <div>
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80" alt="Burger Beef Smash" class="w-full h-48 object-cover">
+            <span class="absolute top-3 left-3 bg-red-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Best Seller</span>
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 text-base">Burger Beef Smash Deluxe</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Daging sapi pilihan 100g, keju melted cheddar, caramelized onion, dan saus racikan rahasia.</p>
+            <div class="mt-4 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-blue-600">Rp 28.000</span>
+              <span class="text-xs text-slate-400 line-through">Rp 35.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 pt-0">
+          <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20pesan:%20Burger%20Beef%20Smash%20Deluxe%20(Rp%2028.000)" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm transition-colors">
+            <i class="fa-brands fa-whatsapp text-base"></i> Pesan Produk Ini
+          </a>
+        </div>
+      </div>
+
+      <!-- ITEM 2: Kuliner -->
+      <div class="product-card kuliner bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
+        <div>
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?w=600&auto=format&fit=crop&q=80" alt="Kopi Susu Gula Aren" class="w-full h-48 object-cover">
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 text-base">Es Kopi Susu Aren (1 Liter)</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Espresso robusta & arabika khas house blend, gula aren organik murni, susu segar creamy.</p>
+            <div class="mt-4 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-blue-600">Rp 65.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 pt-0">
+          <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20pesan:%20Es%20Kopi%20Susu%20Aren%201L%20(Rp%2065.000)" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm transition-colors">
+            <i class="fa-brands fa-whatsapp text-base"></i> Pesan Produk Ini
+          </a>
+        </div>
+      </div>
+
+      <!-- ITEM 3: Fashion -->
+      <div class="product-card fashion bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
+        <div>
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600&auto=format&fit=crop&q=80" alt="Kaos Oversize Vintage" class="w-full h-48 object-cover">
+            <span class="absolute top-3 left-3 bg-indigo-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">New Drop</span>
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 text-base">Kaos Oversize Heavyweight 24s</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Bahan 100% Cotton Combed 24s tebal tidak menerawang, jahitan rantai rapi, fit streetwear.</p>
+            <div class="mt-4 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-blue-600">Rp 115.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 pt-0">
+          <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20pesan:%20Kaos%20Oversize%20Heavyweight%20(Rp%20115.000)" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm transition-colors">
+            <i class="fa-brands fa-whatsapp text-base"></i> Pesan Produk Ini
+          </a>
+        </div>
+      </div>
+
+      <!-- ITEM 4: Fashion -->
+      <div class="product-card fashion bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
+        <div>
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop&q=80" alt="Sneakers Sport Casual" class="w-full h-48 object-cover">
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 text-base">Sneakers Sport Crimson Red</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Sepatu olahraga & kasual sol phylon empuk ringan anti slip. Cocok untuk daily & gym.</p>
+            <div class="mt-4 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-blue-600">Rp 249.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 pt-0">
+          <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20pesan:%20Sneakers%20Sport%20Crimson%20(Rp%20249.000)" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm transition-colors">
+            <i class="fa-brands fa-whatsapp text-base"></i> Pesan Produk Ini
+          </a>
+        </div>
+      </div>
+
+      <!-- ITEM 5: Jasa -->
+      <div class="product-card jasa bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
+        <div>
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=600&auto=format&fit=crop&q=80" alt="Cuci Sepatu Premium" class="w-full h-48 object-cover">
+            <span class="absolute top-3 left-3 bg-amber-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Layanan Terfavorit</span>
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 text-base">Jasa Deep Clean Sepatu</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Pembersihan menyeluruh upper, midsole, insole & outsole + garansi anti jamur & parfum khusus.</p>
+            <div class="mt-4 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-blue-600">Rp 45.000</span>
+              <span class="text-xs text-slate-400">/ pasang</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 pt-0">
+          <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20booking%20jasa:%20Deep%20Clean%20Sepatu" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm transition-colors">
+            <i class="fa-brands fa-whatsapp text-base"></i> Booking Jasa Ini
+          </a>
+        </div>
+      </div>
+
+      <!-- ITEM 6: Jasa -->
+      <div class="product-card jasa bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
+        <div>
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&auto=format&fit=crop&q=80" alt="Servis AC & Cuci" class="w-full h-48 object-cover">
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 text-base">Paket Cuci AC Rumah (0.5 - 2 PK)</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Cuci unit indoor + outdoor, pembersihan filter, dan cek tekanan freon oleh teknisi berpengalaman.</p>
+            <div class="mt-4 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-blue-600">Rp 75.000</span>
+              <span class="text-xs text-slate-400">/ unit</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 pt-0">
+          <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20booking%20jasa:%20Cuci%20AC%20Rumah" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm transition-colors">
+            <i class="fa-brands fa-whatsapp text-base"></i> Booking Jasa Ini
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Banner Promosi Jasa Pembuatan Website (Khusus Untuk Menggaet Klien) -->
+  <section class="max-w-5xl mx-auto px-4 mt-12 mb-8">
+    <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <h4 class="font-bold text-slate-900 text-lg">Tertarik Memiliki Website Katalog Seperti Ini?</h4>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">Dapatkan Domain Resmi (.store / .shop) + Hosting Server Cepat + Tombol WA Otomatis seharga Rp 250.000 sekali bayar!</p>
+      </div>
+      <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20buat%20website%20katalog%20seperti%20demo%20ini" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm py-3 px-6 rounded-xl whitespace-nowrap transition-all shadow-md">
+        Pesan Website Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer Informasi -->
+  <footer class="bg-slate-900 text-slate-400 text-center py-8 px-4 text-xs">
+    <p class="font-bold text-slate-200 text-sm mb-1">Demo Toko Online & Katalog Digital</p>
+    <p>Dikembangkan untuk mempercepat transaksi UMKM Lokal via WhatsApp</p>
+    <p class="mt-4 text-slate-600">&copy; 2026 Website Katalog Demo. All rights reserved.</p>
+  </footer>
+
+  <!-- Script Sederhana Filter Kategori -->
+  <script>
+    function filterCategory(cat) {
+      const cards = document.querySelectorAll('.product-card');
+      const buttons = document.querySelectorAll('.cat-btn');
+
+      // Update style tombol filter
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-blue-600', 'text-white');
+        btn.classList.add('bg-white', 'text-slate-600');
+      });
+
+      event.target.classList.remove('bg-white', 'text-slate-600');
+      event.target.classList.add('bg-blue-600', 'text-white');
+
+      // Filter item grid
+      cards.forEach(card => {
+        if (cat === 'all' || card.classList.contains(cat)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
