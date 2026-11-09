@@ -1,13 +1,61 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Aurelia Hotel & Suites — Official Directory</title>
+
+  <!-- Technical SEO & Meta Tags Utama -->
+  <title>The Aurelia Hotel & Suites — Official Luxury Directory</title>
+  <meta name="title" content="The Aurelia Hotel & Suites — Official Luxury Directory">
+  <meta name="description" content="Hotel Bintang 4 di pusat kota. Booking kamar executive suite, sewa Grand Ballroom wedding, dan konsultasi ruang rapat MICE.">
+  <meta name="keywords" content="Hotel Bintang 4, Sewa Ballroom Wedding, Ruang Rapat Jakarta, Hotel Luxury, Executive Suite">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / WhatsApp Preview Meta Tags (Tampilan Kartu saat Link Dikirim via Chat) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ranting77.store/">
+  <meta property="og:title" content="The Aurelia Hotel & Suites — Luxury Showcase">
+  <meta property="og:description" content="Layanan reservasi langsung via WhatsApp untuk Kamar Suites, Grand Ballroom Wedding, dan MICE Meeting Rooms.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Aurelia Hotel & Suites — Luxury Showcase">
+  <meta name="twitter:description" content="Layanan reservasi langsung via WhatsApp untuk Kamar Suites, Grand Ballroom Wedding, dan MICE Meeting Rooms.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80">
+
+  <!-- Schema.org Structured Data (JSON-LD untuk Kredibilitas Google Search) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "The Aurelia Hotel & Suites",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80",
+    "description": "Hotel Bintang 4 eksklusif dengan fasilitas Grand Ballroom Wedding, MICE Convention Center, dan Executive Suites.",
+    "starRating": {
+      "@type": "Rating",
+      "ratingValue": "4"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Jendral Sudirman No. 88",
+      "addressLocality": "Jakarta Selatan",
+      "addressRegion": "DKI Jakarta",
+      "postalCode": "12190",
+      "addressCountry": "ID"
+    },
+    "telephone": "+6281234567890",
+    "priceRange": "$$$",
+    "url": "https://ranting77.store/"
+  }
+  </script>
+
+  <!-- Styling Framework & Font Luxury -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       background-color: #120C0A;
@@ -21,8 +69,8 @@
 </head>
 <body class="antialiased pb-36">
 
-  <!-- Header Transparan Minimalis -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-[#120C0A]/80 backdrop-blur-md border-b border-white/5">
+  <!-- Header Floating Transparan -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#120C0A]/85 backdrop-blur-md border-b border-white/5">
     <div class="max-w-xl mx-auto px-5 py-4 flex items-center justify-between">
       <div>
         <span class="text-[8px] tracking-[0.3em] uppercase text-[#E4C590] block font-medium">Bintang 4 • City Center</span>
@@ -34,10 +82,10 @@
     </div>
   </header>
 
-  <!-- Hero Cover Photo Full Width -->
-  <section class="relative pt-20">
-    <div class="w-full h-[65vh] relative overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80" alt="The Aurelia Exterior" class="w-full h-full object-cover">
+  <!-- Hero Visual Full Bleed Cover -->
+  <section class="relative pt-16">
+    <div class="w-full h-[60vh] relative overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=80" alt="The Aurelia Hotel Building" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-gradient-to-t from-[#120C0A] via-[#120C0A]/40 to-transparent"></div>
       
       <div class="absolute bottom-6 left-0 right-0 max-w-xl mx-auto px-5">
@@ -52,13 +100,13 @@
     </div>
   </section>
 
-  <!-- Main Directory Catalog -->
+  <!-- Kartu Fasilitas / Directory Utama -->
   <main class="max-w-xl mx-auto px-5 mt-6 space-y-6">
 
-    <!-- Card 1: Wedding -->
+    <!-- 1. Wedding & Banquets -->
     <div class="bg-[#1A120F] rounded-2xl overflow-hidden border border-white/5 shadow-xl">
       <div class="relative aspect-[16/10] overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&auto=format&fit=crop&q=80" alt="Grand Ballroom" class="w-full h-full object-cover">
+        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&auto=format&fit=crop&q=80" alt="Grand Ballroom Wedding" loading="lazy" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-t from-[#1A120F] via-transparent to-transparent"></div>
         <span class="absolute top-3 left-3 bg-[#120C0A]/80 backdrop-blur-md text-[#E4C590] text-[9px] tracking-widest uppercase px-2.5 py-1 rounded-md border border-[#E4C590]/20">
           Wedding & Banquets
@@ -69,16 +117,16 @@
         <p class="text-xs text-stone-400 mt-2 font-light leading-relaxed">
           Kapasitas hingga 1.000 tamu dengan sistem pencahayaan modern, ceiling 8m, dan konsultasi dekorasi kustom.
         </p>
-        <a href="https://wa.me/6281234567890?text=Halo%20Sales%20Wedding%20The%20Aurelia" target="_blank" class="mt-4 w-full block text-center bg-[#E4C590] text-[#120C0A] text-xs font-semibold uppercase tracking-wider py-3 rounded-xl hover:bg-[#d8b377] transition-all">
+        <a href="https://wa.me/6281234567890?text=Halo%20Sales%20Wedding%20The%20Aurelia,%20saya%20ingin%20meminta%20pricelist%20dan%20proposal%20pernikahan" target="_blank" class="mt-4 w-full block text-center bg-[#E4C590] text-[#120C0A] text-xs font-semibold uppercase tracking-wider py-3 rounded-xl hover:bg-[#d8b377] transition-all">
           Konsultasi Sales Wedding
         </a>
       </div>
     </div>
 
-    <!-- Card 2: MICE / Corporate -->
+    <!-- 2. Corporate & MICE -->
     <div class="bg-[#1A120F] rounded-2xl overflow-hidden border border-white/5 shadow-xl">
       <div class="relative aspect-[16/10] overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=80" alt="Meeting Room" class="w-full h-full object-cover">
+        <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=80" alt="Meeting Room" loading="lazy" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-t from-[#1A120F] via-transparent to-transparent"></div>
         <span class="absolute top-3 left-3 bg-[#120C0A]/80 backdrop-blur-md text-[#E4C590] text-[9px] tracking-widest uppercase px-2.5 py-1 rounded-md border border-[#E4C590]/20">
           Corporate & MICE
@@ -89,16 +137,16 @@
         <p class="text-xs text-stone-400 mt-2 font-light leading-relaxed">
           8 ruang rapat modular lengkap dengan proyektor laser 4K, audio premium, dan catering rehat kopi eksklusif.
         </p>
-        <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Sales%20Corporate%20The%20Aurelia" target="_blank" class="mt-4 w-full block text-center bg-white/5 border border-white/10 text-white text-xs font-medium uppercase tracking-wider py-3 rounded-xl hover:bg-white/10 transition-all">
+        <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Sales%20Corporate%20The%20Aurelia,%20saya%20ingin%20meminta%20penawaran%20ruang%20rapat" target="_blank" class="mt-4 w-full block text-center bg-white/5 border border-white/10 text-white text-xs font-medium uppercase tracking-wider py-3 rounded-xl hover:bg-white/10 transition-all">
           Minta Proposal Meeting
         </a>
       </div>
     </div>
 
-    <!-- Card 3: Suites -->
+    <!-- 3. Rooms & Executive Suites -->
     <div class="bg-[#1A120F] rounded-2xl overflow-hidden border border-white/5 shadow-xl">
       <div class="relative aspect-[16/10] overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&auto=format&fit=crop&q=80" alt="Executive Suite" class="w-full h-full object-cover">
+        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&auto=format&fit=crop&q=80" alt="Executive Suite" loading="lazy" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-t from-[#1A120F] via-transparent to-transparent"></div>
         <span class="absolute top-3 left-3 bg-[#120C0A]/80 backdrop-blur-md text-[#E4C590] text-[9px] tracking-widest uppercase px-2.5 py-1 rounded-md border border-[#E4C590]/20">
           Accommodation
@@ -109,8 +157,28 @@
         <p class="text-xs text-stone-400 mt-2 font-light leading-relaxed">
           Kamar berdesain mewah dengan pemandangan kota, city bathtub, kasur King Koil, dan akses Executive Lounge.
         </p>
-        <a href="https://wa.me/6281234567890?text=Halo%20Resepsionis%20The%20Aurelia" target="_blank" class="mt-4 w-full block text-center bg-white/5 border border-white/10 text-white text-xs font-medium uppercase tracking-wider py-3 rounded-xl hover:bg-white/10 transition-all">
+        <a href="https://wa.me/6281234567890?text=Halo%20Resepsionis%20The%20Aurelia,%20saya%20ingin%20cek%20ketersediaan%20kamar%20dan%20rate%20menginap" target="_blank" class="mt-4 w-full block text-center bg-white/5 border border-white/10 text-white text-xs font-medium uppercase tracking-wider py-3 rounded-xl hover:bg-white/10 transition-all">
           Cek Ketersediaan Kamar
+        </a>
+      </div>
+    </div>
+
+    <!-- 4. Dining & Sky Lounge -->
+    <div class="bg-[#1A120F] rounded-2xl overflow-hidden border border-white/5 shadow-xl">
+      <div class="relative aspect-[16/10] overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800&auto=format&fit=crop&q=80" alt="Fine Dining Restaurant" loading="lazy" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1A120F] via-transparent to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#120C0A]/80 backdrop-blur-md text-[#E4C590] text-[9px] tracking-widest uppercase px-2.5 py-1 rounded-md border border-[#E4C590]/20">
+          Dining & Lounge
+        </span>
+      </div>
+      <div class="p-5 pt-1">
+        <h3 class="font-serif-luxury text-2xl text-white font-normal">Aurelia Dining & Sky Lounge</h3>
+        <p class="text-xs text-stone-400 mt-2 font-light leading-relaxed">
+          Sajian kuliner internasional dan lokal buatan Chef berpengalaman dengan suasana rooftop bar yang romantis.
+        </p>
+        <a href="https://wa.me/6281234567890?text=Halo%20Restoran%20The%20Aurelia,%20saya%20ingin%20reservasi%20meja%20makan" target="_blank" class="mt-4 w-full block text-center bg-white/5 border border-white/10 text-white text-xs font-medium uppercase tracking-wider py-3 rounded-xl hover:bg-white/10 transition-all">
+          Reservasi Meja Restoran
         </a>
       </div>
     </div>
@@ -124,7 +192,7 @@
     <p class="pt-2 text-[10px] text-stone-600">&copy; 2026 The Aurelia Hotel. All rights reserved.</p>
   </footer>
 
-  <!-- Floating Bar dengan z-index dan Padding Safety -->
+  <!-- Floating Bar WhatsApp dengan Padding Safety (Tidak Menutupi Konten) -->
   <div class="fixed bottom-4 left-1/2 -translate-x-1/2 w-[92%] max-w-md z-50">
     <div class="bg-[#1A120F]/95 backdrop-blur-md text-white p-3 rounded-2xl border border-[#E4C590]/30 shadow-2xl flex items-center justify-between">
       <div class="pl-2">
