@@ -10,7 +10,7 @@ const STORE_CONFIG = {
   ACCENT_COLOR: '#143A1F'
 };
 
-const GOOGLE_SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQf04kdwpUrv4CdAR04Su4IGPaoMXuHElpy3QeLwnhPW6u38lYWrosgxlzAAhdek8fehPpHShjoHLDy/pub?gid=0&single=true&output=csv';
+const GOOGLE_SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQf04kdwpUrv4CdAR04Su4lGPaoMXuHEIpy3QeLwnhPW6u38lYWrosgxIzAAhdek8fehPpHShjoHLDy/pub?gid=0&single=true&output=csv';
 
 const state = {
   products: [],
