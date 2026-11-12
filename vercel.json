@@ -1,0 +1,28 @@
+{
+  "redirects": [
+    {
+      "source": "/app.js",
+      "has": [
+        {
+          "type": "header",
+          "key": "sec-fetch-dest",
+          "value": "document"
+        }
+      ],
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/style.css",
+      "has": [
+        {
+          "type": "header",
+          "key": "sec-fetch-dest",
+          "value": "document"
+        }
+      ],
+      "destination": "/",
+      "permanent": false
+    }
+  ]
+}
