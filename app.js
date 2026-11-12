@@ -7,7 +7,7 @@ const STORE_CONFIG = {
   kotaLokasi: 'Jakarta, DKI JAKARTA'
 };
 
-const GOOGLE_SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQf04kdwpUrv4CdAR04Su4IGPaoMXuHElpy3QeLwnhPW6u38lYWrosgxlzAAhdek8fehPpHShjoHLDy/pub?gid=0&single=true&output=csv';
+const GOOGLE_SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQf04kdwpUrv4CdAR04Su4lGPaoMXuHEIpy3QeLwnhPW6u38lYWrosgxIzAAhdek8fehPpHShjoHLDy/pub?gid=0&single=true&output=csv';
 
 const FALLBACK_PRODUCT_IMAGE = 'data:image/svg+xml;utf8,' + encodeURIComponent(
   '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">' +
